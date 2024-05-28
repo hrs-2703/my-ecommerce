@@ -8,7 +8,7 @@ router.post('/register',registercontroller)
 
 router.post('/login',logincontroller)
 
-router.post('/forget-password',forgotpasswordcontroller)
+
 router.get('/test',requireSignIn, testcontroller)
 
 router.get("/user-auth", requireSignIn, (req, res) => {
